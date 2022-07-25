@@ -1,0 +1,109 @@
+JFDML JFormDesigner: "7.0.7.0.1134" Java: "11.0.15" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		auxiliary() {
+			"JavaCodeGenerator.defaultVariableModifiers": 9
+		}
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+				name: "menu1"
+				"text": "text"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": -25
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "Scroll_test_jlist"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "jlist"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "test_jlistMouseClicked", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 30
+				"width": 800
+				"height": 265
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Start_Test_Button"
+				"text": "Search"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Start_Test_ButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 105
+				"height": 30
+				"x": 600
+				"y": 300
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Clear_List_Button"
+				"text": "Clear"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Stop_Test_ButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "Clear_List_ButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 104
+				"x": 720
+				"y": 300
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "Scroll_Information_Area"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "Information_Area"
+					"editable": false
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 335
+				"width": 565
+				"height": 130
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Label_Information_Area"
+				"text": "Information"
+				"font": new java.awt.Font( "Segoe UI", 0, 20 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 305
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "keyword"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 660
+				"y": 405
+				"width": 165
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Search"
+				"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, 3, false )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 605
+				"y": 410
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Error"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 600
+				"y": 370
+				"height": 30
+				"width": 225
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "install_button"
+				"text": "Install"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "install_buttonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 720
+				"y": 335
+				"width": 105
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 850, 510 )
+		} )
+	}
+}
