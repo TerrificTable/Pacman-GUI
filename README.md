@@ -9,9 +9,7 @@ It gets / finds the package names and information by using regex... not good reg
 
 It was made in [Maven](https://maven.apache.org/) -> [Java17](https://www.oracle.com/java/technologies/downloads/#java17)
 <br>
-
 It uses [JFrame](https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JFrame.html) for the GUI and [FlatLaf](https://github.com/TerrificTable/Custom-Minecraft-Launcher#flatlaf) as theming
-
 <br>
 <br>
 (Theme is: `FlatMaterialDarkerContrastTheme`)
